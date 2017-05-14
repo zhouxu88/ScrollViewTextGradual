@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_offset"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="日本卡乐比Calbee Jagabee 薯条三兄弟 淡盐味"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="90g/包"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48元"
+            android:textColor="#36A4B2"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:id="@+id/tv_good_detail_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="159"
+                android:textColor="#8A8A8A"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_alignLeft="@+id/tv_good_detail_discount"
+                android:layout_alignRight="@+id/tv_good_detail_discount"
+                android:layout_centerVertical="true"
+                android:background="#bb000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="快递：12.00"
+            android:textColor="#8A8A8A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1321人付款"
+            android:textColor="#8A8A8A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="日本大阪"
+            android:textColor="#8A8A8A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_line_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_good_detail_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/da_ren_services_tick"
+            android:drawablePadding="@dimen/spacing_tiny"
+            android:text="担保交易"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_smaller"
+            android:drawableLeft="@mipmap/da_ren_services_tick"
+            android:drawablePadding="@dimen/spacing_tiny"
+            android:text="正品保障"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_smaller"
+            android:drawableLeft="@mipmap/da_ren_services_tick"
+            android:drawablePadding="@dimen/spacing_tiny"
+            android:text="赔运费险"
+            android:textSize="@dimen/font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_smaller"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/da_ren_services_tick"
+            android:drawablePadding="@dimen/spacing_tiny"
+            android:text="7天退换"
+            android:textSize="@dimen/font_smaller" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/rightarrow" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_small">
+
+        <TextView
+           android:textColor="#8A8A8A"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="包邮" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:text="满299元或两件包邮"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_line_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_good_detail_jin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_tinyer"
+        android:padding="@dimen/spacing_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_original"
+            android:paddingLeft="@dimen/spacing_tinyest"
+            android:paddingRight="@dimen/spacing_tinyest"
+            android:text="金"
+            android:textColor="#F18459"
+            android:textSize="@dimen/spacing_smaller" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/rightarrow" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_smaller"
+        android:background="@color/grey_line_bg" />
+
+    <TextView
+        android:id="@+id/tv_good_detail_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_gray_item"
+        android:drawableRight="@mipmap/rightarrow"
+        android:padding="@dimen/spacing_small"
+        android:text="选择  产品分类" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_smaller"
+        android:background="@color/grey_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品评价" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_smaller"
+            android:orientation="horizontal">
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_smallest"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="谢依霖" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/da_ren_list_star" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_tinyest"
+                            android:src="@mipmap/da_ren_list_star" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_tinyest"
+                            android:src="@mipmap/da_ren_list_star" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_tinyest"
+                            android:src="@mipmap/da_ren_list_star" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                   android:textColor="#8A8A8A"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_tinyest"
+                    android:text="2016年04月" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_tinyest"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="第二次来找这个零食了，第一次吃就开始爱上了，还是跟原来一样的味道" />
+
+                <TextView
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_tinyest"
+                    android:text="颜色分类：原味" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_talent_detail_open"
+           android:textColor="#36A4B2"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_border_color_primary"
+            android:paddingBottom="@dimen/spacing_tiny"
+            android:paddingLeft="@dimen/spacing_smallest"
+            android:paddingRight="@dimen/spacing_smallest"
+            android:paddingTop="@dimen/spacing_tiny"
+            android:text="查看全部评论" />
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>
